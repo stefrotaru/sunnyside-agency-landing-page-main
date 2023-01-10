@@ -1,0 +1,23 @@
+{
+  "name": "sunnyside-agency-landing-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefrotaru/sunnyside-agency-landing-page-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefrotaru/sunnyside-agency-landing-page-main/issues"
+  },
+  "homepage": "https://github.com/stefrotaru/sunnyside-agency-landing-page-main#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

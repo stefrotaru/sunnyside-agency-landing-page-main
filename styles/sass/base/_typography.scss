@@ -1,0 +1,18 @@
+.navbar {
+    font-family: $fonts-barlow;
+}
+
+.page {
+    font-family: $fonts-fraunces;
+
+    &__landing {
+
+        &__title {
+            text-transform: uppercase;
+            font-size: calc(1.5rem + 4vw);
+            letter-spacing: .5rem;
+            color: $neutral-white;
+
+        }
+    }
+}

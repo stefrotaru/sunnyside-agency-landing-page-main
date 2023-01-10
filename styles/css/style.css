@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  font-family: "Barlow", sans-serif; }
+
+.page {
+  font-family: "Fraunces", serif; }
+  .page__landing__title {
+    text-transform: uppercase;
+    font-size: calc(1.5rem + 4vw);
+    letter-spacing: .5rem;
+    color: white; }
+
+.btn-contact {
+  text-transform: uppercase;
+  padding: .8rem 1.6rem;
+  background-color: white;
+  border-radius: 2rem; }
+  .btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+@media (max-width: 850px) {
+  .btn-contact {
+    background-color: #fad400; } }
+
+.navbar {
+  width: 100%;
+  padding: 2rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem; }
+  .navbar svg.hamburger-menu-icon {
+    display: none; }
+
+@media (max-width: 850px) {
+  .navbar__links {
+    gap: 2rem;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 80%;
+    padding: 3rem;
+    display: none; }
+    .navbar__links::before {
+      content: "";
+      position: absolute;
+      border-left: 15px solid transparent;
+      border-right: 15px solid white;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid white;
+      top: -28px;
+      right: 0; }
+  .navbar svg.hamburger-menu-icon {
+    display: block; } }
+
+.page__landing {
+  background: url(../../../images/desktop/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  place-content: center; }
+  .page__landing svg {
+    place-self: center; }
+
+.page__about {
+  width: 50vw; }
+
+.page__services {
+  display: grid;
+  grid-template: "50vw 50vw" "50vw 50vw"; }
+  .page__services__graphic-design {
+    background: url(../../../images/desktop/image-graphic-design.jpg) no-repeat; }
+  .page__services__photography {
+    background: url(../../../images/desktop/image-photography.jpg) no-repeat; }
+
+@media (max-width: 850px) {
+  .page__landing {
+    background: url(../../../images/mobile/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; } }

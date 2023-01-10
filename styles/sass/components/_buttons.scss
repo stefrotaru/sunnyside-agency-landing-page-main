@@ -1,0 +1,18 @@
+// @import "../abstract/variables";
+
+.btn-contact {
+    text-transform: uppercase;
+    padding: .8rem 1.6rem;
+    background-color: $neutral-white;
+    border-radius: 2rem;
+
+    &:hover {
+        background-color: transparentize($neutral-white, .7);
+    }
+}
+
+@media (max-width: 850px) {
+    .btn-contact {
+        background-color: $primary-yellow;
+    }
+}

@@ -1,0 +1,72 @@
+.page {
+    
+    &__landing {
+        background: url(../../../images/desktop/image-header.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        text-align: center;
+    
+        display: grid;
+        place-content: center;
+
+        &__title {
+            // padding: 5rem;
+        }
+
+        svg {
+            place-self: center;
+        }
+    }
+
+    &__about {
+        width: 50vw;
+        &__text {
+
+        }
+    }
+
+    &__services {
+        display: grid;
+        grid-template: 
+            "50vw 50vw"
+            "50vw 50vw";
+        &__text {
+
+        }
+
+        &__graphic-design {
+            background: url(../../../images/desktop/image-graphic-design.jpg) no-repeat;
+            // background-size: ;
+            // width: 720px;
+            // height: 600px;
+            
+            h3 {
+                
+            }
+
+            p {}
+        }
+
+        &__photography {
+            background: url(../../../images/desktop/image-photography.jpg) no-repeat;
+            // width: 720px;
+            // height: 600px;
+        }
+    }
+
+    &__testimonials {}
+}
+
+
+
+@media (max-width: 850px) {
+    .page {
+        &__landing {
+            background: url(../../../images/mobile/image-header.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+    }
+}
